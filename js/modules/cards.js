@@ -1,5 +1,3 @@
-import {getResource} from '../services/services';
-
 function cards() {
     
     //Menu Cards
@@ -40,9 +38,9 @@ function cards() {
         }
     }
 
-    // getResource('http://localhost:3000/menu')
+    // getResource('https://irmakdak.github.io/Food-prog-UDEMY/db.json')
     //     .then(data => {
-    //         data.forEach(({img, altimg, title, descr, price}) => {
+    //         data.menu.forEach(({img, altimg, title, descr, price}) => {
     //             new MenuCard(img, altimg, title, descr, price, '.menu .container').render();
     //         });
     //     });
@@ -51,9 +49,9 @@ function cards() {
     //OR USE AXIOS
     //     V
 
-    axios.get('http://localhost:3000/menu')
+    axios.get('https://irmakdak.github.io/Food-prog-UDEMY/db.json')
         .then(data => {
-            data.data.forEach(({img, altimg, title, descr, price}) => {
+            data.data.menu.forEach(({img, altimg, title, descr, price}) => {
                 new MenuCard(img, altimg, title, descr, price, '.menu .container').render();
             });
         });

@@ -6,7 +6,6 @@ import forms from './modules/forms';
 import slider from './modules/slider';
 import calc from './modules/calc';
 import {showModal} from './modules/modal';
-// import {postData, getResource} from './services/services';
 
 window.addEventListener('DOMContentLoaded', function() {
     const modalTimerId = setTimeout(() => showModal('.modal', modalTimerId), 50000);
